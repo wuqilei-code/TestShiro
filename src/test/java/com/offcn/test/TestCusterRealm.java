@@ -33,6 +33,7 @@ public class TestCusterRealm {
         // 是否有某一个角色
         System.out.println("用户是否拥有一个角色：" + subject.hasRole("role1"));
         // 是否有多个角色
+
         System.out.println("用户是否拥有多个角色：" + subject.hasAllRoles(Arrays.asList("role1", "role2")));
         System.out.println("是否拥有某一个权限：" + subject.isPermitted("user:create"));
         System.out.println("是否拥有多个权限：" + subject.isPermittedAll("user:create:1", "user:delete")); //检查权限
